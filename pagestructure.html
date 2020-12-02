@@ -58,6 +58,29 @@
             .dropdown:hover .dropdown-content {display: block;}
 
             .dropdown:hover .dropbtn {background-color: rgb(177, 41, 0);}
+            
+            .imagedropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .imagedropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .imagedropdown:hover .imagedropdown-content{
+                display: block;
+            }
+
+            .imagedesc{
+                padding: 15px;
+                text-align: center;
+            }
 </style>
 </head>
 <body>
@@ -82,7 +105,14 @@
     <body>
         
         <h1>style is a peice of code that will allow you to change the colour of text</h1>
-        <h2><img src="handy.jpg" width="100" height="145" alt="handy"> base can be used to show the web page to look for all images making it easyer when you use the img tag</h2>
+        <div class="imagedropdown">
+            <img src="handy.jpg" width="100" height="145" alt="handy">
+        <div class="imagedropdown-content">
+            <img src="handy.jpg" width="100" height="145" alt="handy">
+            <div class="imagedesc">handy</div>
+        </div>
+    </div>
+        <h2>base can be used to show the web page to look for all images making it easyer when you use the img tag</h2>
         <p>matrix is used for when you want to free transfor text. </p>
         <div id="trans">test</div id="trans">
     </body>
